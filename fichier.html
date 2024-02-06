@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>  
-        <h1  class="titre" > Qu'est-ce que le HTML ?</h1>
-        <h4></h4>
-        <p>Langage de balisage standard pour les documents 
-            conçus pour être affichés dans un navigateur web.
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet">
+    <title>exercice test</title>
+</head>
+
+<body>
+    <h1 class="titre"> Qu'est-ce que le HTML ?</h1>
+    <h4></h4>
+    <p>Langage de balisage standard pour les documents
+        conçus pour être affichés dans un navigateur web.
         ​</p>
-        <img id="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s">
-        
-    </body>
+    <img id="image1"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s">
+    <form action="" method="get">
+        <label for="name">Entrer votre prenom: </label>
+        <input type="text" name="prenom" id="prenom" required />
+        <br><br>
+        <label for="email">Entrer votre mail: </label>
+        <input type="email" name="mail" id="mail" required />
+        <br><br>
+        <label for="commentaire">zone de texte pour le commentaire </label>
+        <textarea id="commentaire" name="commentaire" rows="5" cols="33">
+            </textarea>
+        <label for="email">Entrer votre telephone: </label>
+        <input type="tel" name="tel" />
+        <br><br>
+        <label for="datePicker">Sélectionnez une date :</label>
+        <input type="date" name="date" />
+        <br><br>
+        <label for="source">Comment avez-vous entendu parler de nous ?</label>
+        <select name="source">
+            <option value="moteur-de-recherche">Moteur de recherche</option>
+            <option value="reseaux-sociaux">Réseaux sociaux</option>
+            <option value="recommandation">Recommandation d'un ami</option>
+            <option value="publicite">Publicité en ligne</option>
+            <option value="autre">Autre</option>
+        </select>
+        <fieldset>
+            <legend>Question à Choix Unique</legend>
+            <label>
+                <input type="radio" name="choix_unique" value="option1">
+                Option 1
+            </label>
+            <label>
+                <input type="radio" name="choix_unique" value="option2">
+                Option 2
+            </label>
+            <label>
+                <input type="radio" name="choix_unique" value="option3">
+                Option 3
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Question à Choix Multiple</legend>
+            <label>
+                <input type="checkbox" name="choix_multiple[]" value="optionA">
+                Option A
+            </label>
+            <label>
+                <input type="checkbox" name="choix_multiple[]" value="optionB">
+                Option B
+            </label>
+            <label>
+                <input type="checkbox" name="choix_multiple[]" value="optionC">
+                Option C
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Envoyer">
+    </form>
+
+</body>
+
 </html>
